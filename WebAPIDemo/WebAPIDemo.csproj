@@ -89,56 +89,60 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Content Include="App_Data\LionAppDB.mdf" />
+    <Content Include="App_Data\LionAppDB_log.ldf">
+      <DependentUpon>LionAppDB.mdf</DependentUpon>
+    </Content>
     <Content Include="App_Data\ProductsDataBase.mdf" />
     <Content Include="App_Data\ProductsDataBase_log.ldf">
       <DependentUpon>ProductsDataBase.mdf</DependentUpon>
     </Content>
     <Content Include="Global.asax" />
-    <Content Include="Models\ProductsModel.Context.tt">
+    <Content Include="Models\PostMessagesModel.Context.tt">
       <Generator>TextTemplatingFileGenerator</Generator>
-      <LastGenOutput>ProductsModel.Context.cs</LastGenOutput>
-      <DependentUpon>ProductsModel.edmx</DependentUpon>
+      <DependentUpon>PostMessagesModel.edmx</DependentUpon>
+      <LastGenOutput>PostMessagesModel.Context.cs</LastGenOutput>
     </Content>
-    <Content Include="Models\ProductsModel.tt">
+    <Content Include="Models\PostMessagesModel.tt">
       <Generator>TextTemplatingFileGenerator</Generator>
-      <DependentUpon>ProductsModel.edmx</DependentUpon>
-      <LastGenOutput>ProductsModel.cs</LastGenOutput>
+      <DependentUpon>PostMessagesModel.edmx</DependentUpon>
+      <LastGenOutput>PostMessagesModel.cs</LastGenOutput>
     </Content>
     <Content Include="Web.config" />
   </ItemGroup>
   <ItemGroup>
     <Compile Include="App_Start\WebApiConfig.cs" />
-    <Compile Include="Controllers\ProductsTablesController.cs" />
+    <Compile Include="Controllers\PostMessagesTablesController.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
-    <Compile Include="Models\ProductsModel.Context.cs">
+    <Compile Include="Models\PostMessagesModel.Context.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
-      <DependentUpon>ProductsModel.Context.tt</DependentUpon>
+      <DependentUpon>PostMessagesModel.Context.tt</DependentUpon>
     </Compile>
-    <Compile Include="Models\ProductsModel.cs">
+    <Compile Include="Models\PostMessagesModel.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
-      <DependentUpon>ProductsModel.tt</DependentUpon>
+      <DependentUpon>PostMessagesModel.tt</DependentUpon>
     </Compile>
-    <Compile Include="Models\ProductsModel.Designer.cs">
+    <Compile Include="Models\PostMessagesModel.Designer.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
-      <DependentUpon>ProductsModel.edmx</DependentUpon>
+      <DependentUpon>PostMessagesModel.edmx</DependentUpon>
     </Compile>
-    <Compile Include="Models\Table.cs">
-      <DependentUpon>ProductsModel.tt</DependentUpon>
+    <Compile Include="Models\PostMessagesTable.cs">
+      <DependentUpon>PostMessagesModel.tt</DependentUpon>
     </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
-    <EntityDeploy Include="Models\ProductsModel.edmx">
+    <EntityDeploy Include="Models\PostMessagesModel.edmx">
       <Generator>EntityModelCodeGenerator</Generator>
-      <LastGenOutput>ProductsModel.Designer.cs</LastGenOutput>
+      <LastGenOutput>PostMessagesModel.Designer.cs</LastGenOutput>
     </EntityDeploy>
-    <Content Include="Models\ProductsModel.edmx.diagram">
-      <DependentUpon>ProductsModel.edmx</DependentUpon>
+    <Content Include="Models\PostMessagesModel.edmx.diagram">
+      <DependentUpon>PostMessagesModel.edmx</DependentUpon>
     </Content>
     <None Include="packages.config" />
     <None Include="Web.Debug.config">
