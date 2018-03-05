@@ -4,8 +4,8 @@
   <edmx:Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
     <!-- Diagram content (shape and connector positions) -->
     <edmx:Diagrams>
-      <Diagram DiagramId="8173e4414e5246eca71ac9a604cc2288" Name="Diagram1">
-        <EntityTypeShape EntityType="ProductsDataBaseModel.Table" Width="1.5" PointX="0.75" PointY="0.75" IsExpanded="true" />
+      <Diagram DiagramId="5f6042a25aca4d4fab85643e68a71fb6" Name="Diagram1">
+        <EntityTypeShape EntityType="LionAppDBModel.PostMessagesTable" Width="1.5" PointX="0.75" PointY="0.75" IsExpanded="true" />
       </Diagram>
     </edmx:Diagrams>
   </edmx:Designer>

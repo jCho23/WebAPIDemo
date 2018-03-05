@@ -12,10 +12,9 @@ namespace WebAPIDemo.Models
     using System;
     using System.Collections.Generic;
     
-    public partial class Table
+    public partial class PostMessagesTable
     {
         public int Id { get; set; }
-        public string ProductName { get; set; }
-        public Nullable<int> Price { get; set; }
+        public string PostMessage { get; set; }
     }
 }

@@ -13,10 +13,10 @@ namespace WebAPIDemo.Models
     using System.Data.Entity;
     using System.Data.Entity.Infrastructure;
     
-    public partial class ProductsDataBaseEntities : DbContext
+    public partial class LionAppDBEntities : DbContext
     {
-        public ProductsDataBaseEntities()
-            : base("name=ProductsDataBaseEntities")
+        public LionAppDBEntities()
+            : base("name=LionAppDBEntities")
         {
         }
     
@@ -25,6 +25,6 @@ namespace WebAPIDemo.Models
             throw new UnintentionalCodeFirstException();
         }
     
-        public virtual DbSet<Table> Tables { get; set; }
+        public virtual DbSet<PostMessagesTable> PostMessagesTables { get; set; }
     }
 }
